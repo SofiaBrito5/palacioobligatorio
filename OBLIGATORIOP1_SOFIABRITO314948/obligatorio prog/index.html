@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/vnd.icon" href="logoicon.ico">
+
+</head>
+<body>
+    <!-- modal de Sign In -->
+  <div id="modal">
+    <div id="modal-content">
+      <button id="close-btn" title="Cerrar">&times;</button>
+      <h2 id="signin">Sign In</h2>
+      <form id="signin-form">
+        <input type="email" id="email" placeholder="Correo electrónico" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+        <p id="message"></p>
+      </form>
+    </div>
+  </div>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.jpg" alt="">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="#productos">Instrumentos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div id="banner-ofertas">
+  Ofertas válidas hasta fin de mes — <span id="contador-ofertas"></span>
+</div>
+
+
+  <div class="slider">
+  <img id="slider" src="" alt="">
+  <button id="anterior" class="control left">←</button>
+  <button id="siguiente" class="control right">→</button>
+</div>
+
+
+  <main>
+    <section class="productos" id="productos">
+      <h2>Nuevos Instrumentos</h2>
+       <div id="contenedor-cards"></div>
+    </section>
+
+    <section class="ofertasvideorojita" id="ofertasvideorojita">
+         <video autoplay muted loop playsinline>
+    <source src="img/videobannerofertas.mp4" type="video/mp4">
+    </section>
+
+    <section class="ofertas" id="ofertas">
+  <h2>Ofertas Especiales</h2>
+  <div class="grid" id="contenedor-ofertas">
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PALACIO DE LA MUSICA. (obligatorio S.Brito) Todos los derechos reservados.</p>
+  </footer>
+</body> 
+<script src="datos.js"></script>
+<script src="js-index.js"></script>
+</html>

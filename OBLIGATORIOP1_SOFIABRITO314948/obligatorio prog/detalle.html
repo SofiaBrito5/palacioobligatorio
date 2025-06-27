@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detalle del Producto</title>
+  <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" type="image/vnd.icon" href="logoicon.ico">
+
+</head>
+<body>
+     <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.jpg" alt="">
+      </a>
+    </div>
+    <nav>
+      <ul>
+       <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="index.html#productos">Instrumentos</a></li>
+        <li><a href="index.html#ofertas">Ofertas</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div id="banner-ofertas">
+  Ofertas válidas hasta fin de mes — <span id="contador-ofertas"></span>
+</div>
+
+
+  <main class="detalle-producto" style="display: flex; gap: 2rem; justify-content: center;">
+  <div id="galeria">
+    <img src="" alt="imagen instrumento" id="imagenes"> 
+    <div class="miniaturas"></div>
+    </div>
+  </div>
+
+  <div class="info-detalle">
+ <h1 id="nombre"></h1>
+<p id="descripcion"></p>
+<p id="textoPersonalizado"></p>
+<p id="precio" class="precio-estilo"></p>
+<p id="precioAntes"></p>
+<p id="precioAhora" class="precio-estilo"></p>
+<button id="btnComprar">Comprar</button>
+<button id="btnDescuento">Código de descuento</button>
+<div id="popupDescuento" class="popup-descuento oculto">
+  <p>Tu código: <span id="codigoDescuento"></span></p>
+</div>
+
+  </div>
+
+</main>
+
+ <footer>
+    <p>&copy; 2025 PALACIO DE LA MUSICA. (obligatorio S.Brito) Todos los derechos reservados.</p>
+  </footer>
+
+<script src="datos.js"></script>
+<script src="detalle.js"></script>
+
+</body>
+</html>
